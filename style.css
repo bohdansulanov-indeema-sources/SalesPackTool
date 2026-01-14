@@ -51,7 +51,11 @@ body {
 }
 
 .logo-container {
-    text-align: center;
+    width: 100%;
+    /* Ensure full width to allow centering */
+    display: flex;
+    justify-content: center;
+    /* Robust centering */
     margin-bottom: 32px;
     opacity: 0;
     transform: translateY(20px);
@@ -59,9 +63,13 @@ body {
 }
 
 .survey-logo {
-    max-width: 240px;
+    width: 240px;
+    /* Explicit width */
+    max-width: 100%;
+    /* Safety */
     height: auto;
-    display: inline-block;
+    display: block;
+    /* Remove inline behaviors */
 }
 
 @keyframes fadeIn {
