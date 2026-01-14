@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Package Recommender</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="survey-container">
+        <header class="survey-header">
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="step-indicator" id="stepIndicator">Question 1 of 5</div>
+        </header>
+
+        <form id="surveyForm" class="survey-form">
+            <!-- Questions will be injected here by JS -->
+            <div id="questionContainer" class="question-container">
+                <!-- Dynamic Content -->
+            </div>
+
+            <div class="navigation-buttons">
+                <button type="button" id="prevBtn" class="btn btn-secondary" disabled>Back</button>
+                <button type="button" id="nextBtn" class="custom-btn btn-6"><span>Next</span></button>
+            </div>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
